@@ -1,0 +1,54 @@
+.header {
+  max-width: 60rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--color-primary-400);
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-primary-800);
+}
+
+.list li {
+  list-style: none;
+}
+
+.list button {
+  background-color: var(--color-primary-700);
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list button:hover {
+  background-color: var(--color-primary-500);
+  transform: scale(1.05);
+}
+
+.list button:active {
+  transform: scale(1);
+}
+
+.list button:focus {
+  outline: 3px solid var(--color-primary-300);
+}
